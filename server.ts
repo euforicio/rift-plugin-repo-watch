@@ -1,4 +1,4 @@
-import { defineRpcContract, type BbPluginApi } from "@get-bb/plugin-sdk";
+import { defineRpcContract, type RiftPluginApi } from "@riftlabs/plugin-sdk";
 import { execFile } from "node:child_process";
 import { readdir } from "node:fs/promises";
 import { promisify } from "node:util";
@@ -38,7 +38,7 @@ export const rpcContract = defineRpcContract({
   removeWorktree: { input: z.object({ repoPath: z.string(), worktreePath: z.string() }), output: z.object({ ok: z.boolean(), message: z.string() }) },
 });
 
-export default async function plugin(bb: BbPluginApi) {
+export default async function plugin(bb: RiftPluginApi) {
   const settings = bb.settings.define({
     scanRoots: {
       type: "string", label: "Repository scan roots",

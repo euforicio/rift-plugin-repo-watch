@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { definePluginApp, useRpc } from "@get-bb/plugin-sdk/app";
+import { definePluginApp, useRpc } from "@riftlabs/plugin-sdk/app";
 import type { rpcContract } from "./server";
 
 type Worktree = { path: string; branch: string | null; isMain: boolean; isMissing: boolean; isClean: boolean | null; isMerged: boolean; needsCleanup: boolean };

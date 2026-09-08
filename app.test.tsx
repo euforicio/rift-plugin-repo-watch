@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import { fireEvent, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
-import { loadPluginApp, renderSlot } from "@get-bb/plugin-sdk/testing/app";
+import { loadPluginApp, renderSlot } from "@riftlabs/plugin-sdk/testing/app";
 
 const snapshot = {
   fetchedAt: "2026-08-16T00:00:00.000Z",

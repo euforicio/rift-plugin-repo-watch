@@ -1,11 +1,11 @@
 {
   "sdkMajor": 0,
-  "sdkVersion": "0.4.6",
+  "sdkVersion": "0.4.48",
   "artifactFormatVersion": 1,
   "pluginId": "repo-watch",
   "pluginVersion": "0.2.2",
   "builtWith": {
-    "bbVersion": "0.37.0",
-    "pluginSdkVersion": "0.4.6"
+    "riftVersion": "0.42.1",
+    "pluginSdkVersion": "0.4.48"
   }
 }

@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { createFakePluginHost } from "@get-bb/plugin-sdk/testing";
+import { createFakePluginHost } from "@riftlabs/plugin-sdk/testing";
 import plugin, { openCommandForPlatform } from "./server";
 
 describe("repo-watch RPCs", () => {
   it("returns git status output for a selected path", async () => {
-    const { bb, harness } = createFakePluginHost({ pluginId: "repo-watch" });
-    await plugin(bb);
+    const { rift, harness } = createFakePluginHost({ pluginId: "repo-watch" });
+    await plugin(rift);
 
     const result = await harness.behavior.callRpc("gitStatus", { path: process.cwd() });
 
